@@ -1,0 +1,18 @@
+/*----------------- 
+frontend related CSS you can change this color.
+-----------------*/
+::selection {
+    color: white;
+    background-color: #ffc10c;
+    }
+
+ .highlight {
+    color: white;
+    background-color: #ffc10c;
+    font-weight:bold; 
+  }
+
+  .highlight {
+    user-select: none; /* Disable text selection */
+    cursor: not-allowed; /* Change cursor to not-allowed */
+  } 
