@@ -1,0 +1,40 @@
+.swatch{
+    width: 40px;
+    height:40px;
+    border-radius: 100%;
+    cursor:pointer;
+    border: 1px solid;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 25px;
+}
+
+.pa_color , .pa_image{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.slected {
+    border: 2px solid green;
+    padding: 6px;
+}
+.swatch-wrap {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+table.variations {
+    display: none;
+} 
+
+.flex-viewport {
+    height: 500px !important;
+}
