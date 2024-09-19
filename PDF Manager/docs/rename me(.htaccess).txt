@@ -1,0 +1,3 @@
+# Inside my-docs/docs/.htaccess
+Order Deny,Allow
+Deny from all
