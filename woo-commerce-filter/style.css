@@ -7,3 +7,7 @@
 .filter-price input{
     margin:0px 5px;
 }
+
+.filter-brand label {
+    margin-right: 10px;
+}
