@@ -42,7 +42,7 @@ function custom_woocommerce_template_paths() {
             echo '</div>';
         }
 		?>
-<a class="reset_variations" href="#" style="visibility: visible;">Clear</a>	
+<a class="reset_variations" href="#" style="visibility: visible;">Clear</a>
 <?php 
     }
 }

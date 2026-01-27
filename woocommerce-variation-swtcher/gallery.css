@@ -1,9 +1,9 @@
-.swatch{
+.swatch {
     width: 40px;
-    height:40px;
+    height: 40px;
     border-radius: 100%;
-    cursor:pointer;
-    border: 1px solid;
+    cursor: pointer;
+    border: 1px solid #ddd;
     overflow: hidden;
     text-align: center;
     display: flex;
@@ -12,9 +12,16 @@
     font-weight: bold;
     font-family: serif;
     font-size: 25px;
+    transition: all 0.3s ease;
 }
 
-.pa_color , .pa_image{
+.swatch:hover {
+    transform: scale(1.1);
+    border-color: #0073aa;
+}
+
+.pa_color,
+.pa_image {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
@@ -24,17 +31,152 @@
     border: 2px solid green;
     padding: 6px;
 }
+
 .swatch-wrap {
     display: flex;
     gap: 10px;
     flex-direction: row;
     margin-bottom: 20px;
-    flex-wrap: wrap;
 }
 
+/* Dynamic attribute display styles */
+.wcvg-variation-attributes {
+    margin-bottom: 20px;
+}
+
+.wcvg-attribute-group {
+    margin-bottom: 25px;
+}
+
+.wcvg-attribute-label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.wcvg-swatch-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.wcvg-color-swatch {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wcvg-image-swatch {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.wcvg-image-swatch img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wcvg-button-swatch {
+    padding: 8px 16px;
+    border: 2px solid #ddd;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    color: #000;
+}
+
+
+.wcvg-radio-swatch {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.wcvg-radio-swatch input[type="radio"] {
+    margin-right: 8px;
+}
+
+.wcvg-radio-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.wcvg-default-swatch {
+    padding: 8px 12px;
+    border: 2px solid #ddd;
+    background: #f8f8f8;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* Active states */
+.wcvg-swatch.wcvg-active,
+.wcvg-color-swatch.wcvg-active,
+.wcvg-image-swatch.wcvg-active,
+.wcvg-button-swatch.wcvg-active,
+.wcvg-default-swatch.wcvg-active {
+    border-color: #0073aa;
+    box-shadow: 0 0 0 2px rgba(0, 115, 170, 0.3);
+}
+
+.wcvg-button-swatch.wcvg-active {
+    background: #0073aa;
+    color: #fff;
+}
+
+.wcvg-default-swatch.wcvg-active {
+    background: #0073aa;
+    color: #fff;
+    border-color: #0073aa;
+}
+
+/* Reset button */
+.wcvg-reset {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.wcvg-reset:hover {
+    background: #e9e9e9;
+    color: #333;
+}
+
+/* Hide default WooCommerce variations */
 table.variations {
-    display: none;
-} 
+    display: none !important;
+}
+
+.woocommerce-variation-price {
+    margin-top: 15px;
+}
+
+.woocommerce-variation-description {
+    margin-top: 10px;
+}
 
 .flex-viewport {
     height: 500px !important;

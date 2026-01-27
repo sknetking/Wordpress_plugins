@@ -109,7 +109,7 @@ function custom_woocommerce_template_paths() {
 		
     }
 	?>
-	<script>
+<script>
 function dynamicSwatchSelector(clickElement, triggerSelector, activeClass) {
     var currentValue = jQuery(clickElement).attr('data-val');
     jQuery(clickElement).siblings().removeClass(activeClass);
@@ -117,7 +117,7 @@ function dynamicSwatchSelector(clickElement, triggerSelector, activeClass) {
     jQuery(clickElement).addClass(activeClass);
     console.log(currentValue);
 }
-		</script> 
+</script>
 <?php 
 	}
 }
