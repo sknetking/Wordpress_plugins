@@ -1,0 +1,267 @@
+/* SK Checkout Field Editor - Frontend Styles */
+
+.sk-cfe-custom-field {
+    margin-bottom: 15px;
+}
+
+.sk-cfe-custom-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.sk-cfe-custom-field input[type="text"],
+.sk-cfe-custom-field input[type="email"],
+.sk-cfe-custom-field input[type="tel"],
+.sk-cfe-custom-field input[type="number"],
+.sk-cfe-custom-field input[type="password"],
+.sk-cfe-custom-field input[type="date"],
+.sk-cfe-custom-field input[type="time"],
+.sk-cfe-custom-field textarea,
+.sk-cfe-custom-field select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: border-color 0.3s ease;
+}
+
+.sk-cfe-custom-field input:focus,
+.sk-cfe-custom-field textarea:focus,
+.sk-cfe-custom-field select:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 2px rgba(0, 115, 170, 0.2);
+}
+
+.sk-cfe-custom-field textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.sk-cfe-custom-field .required {
+    color: #d63638;
+}
+
+.sk-cfe-custom-field .description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Checkbox and Radio Styles */
+.sk-cfe-custom-field input[type="checkbox"],
+.sk-cfe-custom-field input[type="radio"] {
+    margin-right: 8px;
+    margin-top: 2px;
+}
+
+.sk-cfe-custom-field .checkbox-option,
+.sk-cfe-custom-field .radio-option {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.sk-cfe-custom-field .checkbox-option label,
+.sk-cfe-custom-field .radio-option label {
+    display: inline;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+/* File Upload Styles */
+.sk-cfe-custom-field input[type="file"] {
+    border: 2px dashed #ddd;
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sk-cfe-custom-field input[type="file"]:hover {
+    border-color: #0073aa;
+    background: #f0f8ff;
+}
+
+.sk-cfe-file-preview {
+    margin-top: 10px;
+    padding: 10px;
+    background: #f0f8ff;
+    border: 1px solid #0073aa;
+    border-radius: 4px;
+}
+
+.sk-cfe-file-preview .file-name {
+    font-weight: 600;
+    color: #0073aa;
+}
+
+.sk-cfe-file-preview .file-size {
+    font-size: 12px;
+    color: #666;
+}
+
+.sk-cfe-remove-file {
+    background: #d63638;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.sk-cfe-remove-file:hover {
+    background: #b32d2e;
+}
+
+/* Error States */
+.sk-cfe-custom-field.woocommerce-invalid input,
+.sk-cfe-custom-field.woocommerce-invalid textarea,
+.sk-cfe-custom-field.woocommerce-invalid select {
+    border-color: #d63638;
+}
+
+.sk-cfe-custom-field .error-message {
+    color: #d63638;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Loading State */
+.sk-cfe-custom-field.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.sk-cfe-custom-field .spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: sk-cfe-spin 1s linear infinite;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+@keyframes sk-cfe-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sk-cfe-custom-field input[type="text"],
+    .sk-cfe-custom-field input[type="email"],
+    .sk-cfe-custom-field input[type="tel"],
+    .sk-cfe-custom-field input[type="number"],
+    .sk-cfe-custom-field input[type="password"],
+    .sk-cfe-custom-field input[type="date"],
+    .sk-cfe-custom-field input[type="time"],
+    .sk-cfe-custom-field textarea,
+    .sk-cfe-custom-field select {
+        font-size: 16px; /* Prevent zoom on iOS */
+    }
+}
+
+/* Additional Fields Section */
+.sk-cfe-additional-fields {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.sk-cfe-additional-fields h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Field Groups */
+.sk-cfe-field-group {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+
+.sk-cfe-field-group h4 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Conditional Fields */
+.sk-cfe-conditional-field {
+    display: none;
+}
+
+.sk-cfe-conditional-field.show {
+    display: block;
+}
+
+/* Tooltips */
+.sk-cfe-tooltip {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #0073aa;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16px;
+    font-size: 12px;
+    cursor: help;
+    margin-left: 5px;
+    position: relative;
+}
+
+.sk-cfe-tooltip:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 12px;
+    z-index: 1000;
+}
+
+/* Progress Indicator */
+.sk-cfe-progress {
+    width: 100%;
+    height: 4px;
+    background: #f0f0f0;
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.sk-cfe-progress-bar {
+    height: 100%;
+    background: #0073aa;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/* Success Message */
+.sk-cfe-success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+    border: 1px solid #c3e6cb;
+}
