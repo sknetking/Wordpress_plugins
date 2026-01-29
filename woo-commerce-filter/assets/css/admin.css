@@ -1,0 +1,35 @@
+/* WooCommerce Product Filter - Admin Styles */
+
+.wc-filter-shortcode-info {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.wc-filter-shortcode-info h2 {
+    margin-top: 0;
+    color: #23282d;
+}
+
+.wc-filter-shortcode-info code {
+    background: #e8e8e8;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: Monaco, Consolas, monospace;
+}
+
+.wc-filter-shortcode-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.wc-filter-shortcode-info li {
+    margin-bottom: 8px;
+}
+
+.wc-filter-shortcode-info li code {
+    background: #f0f0f0;
+    color: #d63638;
+}
